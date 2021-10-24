@@ -201,9 +201,9 @@ if choice=="Posedetection":
 
     st.write("The detector is inspired by our own lightweight BlazeFace model, used in MediaPipe Face Detection, as a proxy for a person detector. It explicitly predicts two additional virtual keypoints that firmly describe the human body center, rotation and scale as a circle. Inspired by Leonardo’s Vitruvian man, we predict the midpoint of a person’s hips, the radius of a circle circumscribing the whole person, and the incline angle of the line connecting the shoulder and hip midpoints.")
     #certi = cv2.imread("C:\\Users\\Admin\\Desktop\\github\\CVexcercise\\poseestimation\\data\\pose_tracking_detector_vitruvian_man.png")
-    m=cv2.imread("C:\\Users\\Admin\\Desktop\\github\\CVexcercise\\poseestimation\\data\\pose_tracking_detector_vitruvian_man.png")
+    m=cv2.imread("data\\pose_tracking_detector_vitruvian_man.png")
     st.image(m)
-    n=cv2.imread("C:/Users/Admin/Desktop/github/CVexcercise/poseestimation/data/3j8BPdc.png")
+    n=cv2.imread("data/3j8BPdc.png")
     st.image(n)
     st.subheader("Try Demo")
     pose_mediapipe()
@@ -216,8 +216,8 @@ if choice=="Excercise":
     st.title("Excercise Demo")
     st.subheader("Understanding Cordinates")
     st.write("The k-NN algorithm used for pose classification requires a feature vector representation of each sample and a metric to compute the distance between two such vectors to find the nearest pose samples to a target one.To convert pose landmarks to a feature vector, we use pairwise distances between predefined lists of pose joints, such as distances between wrist and shoulder, ankle and hip, and two wrists. Since the algorithm relies on distances, all poses are normalized to have the same torso size and vertical torso orientation before the conversion.")
-    st.video("C:/Users/Admin/Desktop/github/CVexcercise/poseestimation/data/pose_world_landmarks.mp4")
-    z=cv2.imread("C:\\Users\\Admin\\Desktop\\github\\CVexcercise\\poseestimation\\data\\pose_classification_pairwise_distances.png")
+    st.video("data/pose_world_landmarks.mp4")
+    z=cv2.imread("data\\pose_classification_pairwise_distances.png")
     st.image(z)
     curl_calculator()
 
