@@ -199,6 +199,8 @@ def curl_calculator():
 
 if choice=="Main":
     st.title("Welcome to CVExcercise Demo")
+    st.text("Built with opencv and streamlit")
+    st.success("By Anirudh soni and Keshav rao")
 if choice=="Posedetection":
     st.title("Pose detection with Mediapipe Library")
     st.subheader("Person/pose Detection Model (BlazePose Detector)")
@@ -225,3 +227,9 @@ if choice=="Excercise":
     #st.image(z)
     curl_calculator()
 
+if choice=="References":
+    st.title("References")
+    st.write("An Overview of Human Pose Estimation with Deep Learning [Link](https://www.kdnuggets.com/2019/06/human-pose-estimation-deep-learning.html)")
+    st.write("Posture Detection using PoseNet with Real-time Deep Learning project [Link](https://www.analyticsvidhya.com/blog/2021/09/posture-detection-using-posenet-with-real-time-deep-learning-project/)")
+    st.write("Human Pose Estimation : Simplified [Link](https://towardsdatascience.com/human-pose-estimation-simplified-6cfd88542ab3)")
+    
