@@ -11,7 +11,7 @@ choice=st.sidebar.selectbox("Select",Activity)
 #@st.cache(suppress_st_warning=True)
 def pose_mediapipe():
     FRAME_WINDOW = st.image([])
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture("data\PushUp.mp4")
     start_demo = st.checkbox('Start Demo')
     with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as pose:
         while start_demo:
@@ -56,7 +56,7 @@ def calculate_angle(a,b,c):
 
 def Angle_calulator():
     FRAME_WINDOW = st.image([])
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture("data\PushUp.mp4")
     start_demo = st.checkbox('Start Demo')
     with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as pose:
         while start_demo:
@@ -105,7 +105,12 @@ def Angle_calulator():
     
 def curl_calculator():
     FRAME_WINDOW = st.image([])
-    cap = cv2.VideoCapture(0)
+    Video="data\\1020355081-preview.mp4"
+    Camera=0
+    vid=Video
+    cam=Camera
+    yo=st.selectbox("pick source",(vid,cam))
+    cap = cv2.VideoCapture(yo)
     start_demo = st.checkbox('Start Demo')
     counter = 0 
     stage = None

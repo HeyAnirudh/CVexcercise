@@ -3,8 +3,8 @@ import mediapipe as mp
 import numpy as np
 mp_drawing = mp.solutions.drawing_utils
 mp_pose = mp.solutions.pose
-cap = cv2.VideoCapture(0)
-cap = cv2.VideoCapture(0)
+
+cap = cv2.VideoCapture("data\\1020355081-preview.mp4")
 ## Setup mediapipe instance
 def calculate_angle(a,b,c):
     a = np.array(a) # First
