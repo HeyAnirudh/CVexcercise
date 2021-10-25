@@ -12,6 +12,10 @@ git clone https://github.com/HeyAnirudh/CVexcercise
 ```bash
   streamlit run maincopy.py
    ```
+## To see the end feature ( if not streamlit)
+'''bash
+pip run trial.py
+'''
 ## Web App using instructions :-
 ### Choose the option from the  
 <details>
